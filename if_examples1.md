@@ -9,37 +9,7 @@
 
 4. Beispielaufgabe zur Überprüfung des größten Wertes:
    Entwickle ein C-Programm, das drei Ganzzahlen vom Benutzer einliest und dann den größten Wert unter den dreien ausgibt. Verwende `if`-Anweisungen, um die Vergleiche durchzuführen und den größten Wert zu ermitteln.
-
-
-```c
-#include <stdio.h>
-
-int main() {
-    float gewicht, kosten = 0;
-
-    printf("Geben Sie das Gewicht des Pakets ein (in kg): ");
-    scanf("%f", &gewicht);
-
-    if (gewicht <= 0) {
-        printf("Ungültiges Gewicht.\n");
-    } else if (gewicht <= 1) {
-        kosten = 3.5;
-    } else if (gewicht <= 5) {
-        kosten = 5.5;
-    } else if (gewicht <= 10) {
-        kosten = 8.5;
-    } else {
-        kosten = 10.5;
-    }
-
-    if (kosten > 0) {
-        printf("Die Versandkosten betragen %.2f Euro.\n", kosten);
-    }
-
-    return 0;
-}
-```
-
+   
 Dieses Programm fragt den Benutzer nach dem Gewicht eines Pakets und berechnet dann die entsprechenden Versandkosten. Es werden `if`-Anweisungen verwendet, um das Gewicht zu überprüfen und die Versandkosten entsprechend festzulegen:
 
 - Wenn das Gewicht unter oder gleich 1 kg ist, beträgt die Versandkosten 3,50 Euro.
